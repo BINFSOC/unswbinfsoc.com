@@ -19,3 +19,8 @@
     max-width: 150px; 
     height: auto; 
   }
+
+.logo img {
+    width: 250px;
+    height: auto;
+  }
