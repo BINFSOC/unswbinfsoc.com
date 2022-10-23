@@ -1,505 +1,309 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<link rel="stylesheet" href="/css/styles.css">
 
 <head>
 	<meta name="generator" content="Hugo 0.92.2" />
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  
-  
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/home.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3254d21c01.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
   <title>BINFSOC</title>
 
-  
-  <meta name="description" content="UNSW Bioinformatics Society">
-  <meta name="keywords" content="unsw, bioinformatics, society, binfsoc, binfsights">
-
-  <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="BINFSOC"/>
-<meta name="twitter:description" content="UNSW Bioinformatics Society"/>
-
-  <meta property="og:title" content="BINFSOC" />
-<meta property="og:description" content="UNSW Bioinformatics Society" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/" />
-
-
-
-  <link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
-  
-  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
-    type="text/css">
-
-  
-  
-  <link rel="stylesheet" href="/sass/main.css">
-
-  
-  <link rel="stylesheet" href="/zoomjs/zoom.min.css">
-
-  
-  
-  
-
-  <script src="/js/lazysizes.min.js"></script>
-
-  
-  
-
-  <link rel="alternate" type="application/json" href="/index.json" title="BINFSOC" />
-  <link rel="alternate" type="application/rss+xml" href="/index.xml" title="BINFSOC" />
-  
 </head>
 
+<body>
+  <div id="wrapper" >
 
-
-<body ontouchstart="">
-
-  
-  
-  
-  
-  
-  
-  
-
-  
-
-  
-  
-
-
-
-
-
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top ">
-  <div class="container-fluid">
-    
-    <div class="navbar-header page-scroll">
-      <button type="button" class="navbar-toggle">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/">BINFSOC</a>
+    <div id="slideout-menu" onfocus>
+      <ul>
+        <li>
+          <a href="/binfsights/">BINFSIGHTS</a>
+        </li>
+        <li>
+          <a href='/events/'>OUR EVENTS</a>
+        </li>
+        <li>
+          <a href='/team/'>MEET THE TEAM</a>
+        </li>
+        <li>
+          <a href="/contact/">CONTACT US</a>
+        </li>
+        <li>
+          <input type="text" placeholder="Search Here">
+         
+        </li>
+      </ul>
     </div>
+    <nav id="navigation">
+      <div id="logo-img">
+        <a href="/">
+  
+          <img src="/home/white helix@4x.png" alt="Unswbinfsoc Logo">
+        </a>
+      </div>
+      <div id="menu-icon" onclick="slideoutMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul>
+        <li>
+          <a class="active" href="/">HOME</a>
+        </li>
+        <li>
+          <a href="/binfsights/">BINFSIGHTS</a>
+        </li>
+        <li>
+          <a href="/events/">OUR EVENTS</a>
+        </li>
+        <li>
+          <a href="/team/">MEET THE TEAM</a>
+        </li>
+        <li>
+          <a href="/contact/">CONTACT US</a>
+        </li>
+        <li>
+          <div id="search-icon">
+            <i class="fas fa-search"></i>
+          </div>
+        </li>
+      </ul>
+  
+    </nav>
+  
+  
+  
+    <div id="search-box">
+      <input type="text" placeholder="Search Here">
+  
+    </div>
+  
     
-    <div id="huxblog_navbar">
-      <div class="navbar-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          
-          <li><a href="/binfsights/" title="BINFSIGHTS">BINFSIGHTS</a></li>
-          
-          <li><a href="/events/" title="Our Events">Our Events</a></li>
-          
-          <li><a href="/team/" title="Meet The Team">Meet The Team</a></li>
-          
-          <li><a href="/about/" title="About Us">About Us</a></li>
-          
-          <li><a href="/sponsors/" title="Our Sponsors">Our Sponsors</a></li>
-          
-          <li><a href="/contact/" title="Contact Us">Contact Us</a></li>
-          
+    <div id="scroll-gradient-down"></div>
+    <div id="scroll-gradient-up"></div>
+  
+    <div class="banner" id="banner-logo">
+      <div class="slideshow" id = "slideshow">
+        <img src="/home/cropped-BINFSOC-HEADER-768x418.png" alt="binfsoc">
+        <video autoplay muted loop id="code-display">
+          <source src="/home/codeEffect2.webm" type="video/webm">
+        </video>
+        <img src="/home/slideshow_im.jpg" alt="BINFSOC">
+        
 
-          <li class="search-icon">
-            <a href="javascript:void(0)">
-              <i class="fa fa-search"></i>
+      </div>
+  
+      <div id="banner-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid meet" id="fp-back">
+          <path id="path4" fill="none" stroke="grey" stroke-width="20" stroke-linecap="round" d="M 432.00,404.00
+                 C 432.00,404.00 377.33,413.33 341.33,474.67
+                   305.33,536.00 302.67,602.00 350.67,618.67
+                   398.67,635.33 431.33,600.00 432.67,567.33
+                   434.00,534.67 459.33,504.00 498.00,507.33
+                   536.67,510.67 560.67,544.67 549.33,596.00
+                   538.00,647.33 525.33,664.67 508.00,683.33
+                   490.67,702.00 466.00,717.33 437.33,728.67
+                      M 369.33,564.67
+                    C 369.33,564.67 372.00,514.00 424.00,472.67
+                      476.00,431.33 548.00,440.67 592.00,490.67
+                      M 313.00,411.00
+                    C 313.00,411.00 391.00,326.00 508.00,333.00
+                      625.00,340.00 673.00,402.00 712.00,453.00
+                      M 314.00,410.00
+                    C 314.00,410.00 405.00,314.00 534.00,335.00
+                      663.00,356.00 710.00,450.00 712.00,453.00
+                      M 315.00,411.50
+                    C 315.00,411.50 382.00,331.00 497.00,333.00
+                      612.00,335.00 679.00,400.00 713.00,455.00
+                      M 407.50,288.00
+                    C 407.50,288.00 466.00,270.00 514.00,273.00
+                      562.00,276.00 608.00,291.00 625.00,300.00
+                      M 505.00,391.00
+                    C 505.00,391.00 577.00,391.00 627.00,441.00
+                      677.00,491.00 691.00,533.00 671.00,626.00
+                      M 493.00,566.00
+                    C 493.00,566.00 495.00,624.00 452.00,656.00
+                      409.00,688.00 351.00,677.00 351.00,677.00
+                      M 612.50,570.00
+                    C 612.50,570.00 615.50,586.50 611.50,607.00
+                      607.50,627.50 598.00,660.00 543.00,723.00" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid meet" id="fp-glow">
+          <path id="path5" fill="none" stroke="white" stroke-width="20" stroke-linecap="round" d="
+                      M 369.33,564.67
+                    C 369.33,564.67 372.00,514.00 424.00,472.67
+                      476.00,431.33 548.00,440.67 592.00,490.67
+                      M 313.00,411.00
+                    C 313.00,411.00 391.00,326.00 508.00,333.00
+                      625.00,340.00 673.00,402.00 712.00,453.00
+                      M 314.00,410.00
+                    C 314.00,410.00 405.00,314.00 534.00,335.00
+                      663.00,356.00 710.00,450.00 712.00,453.00
+                      M 315.00,411.50
+                    C 315.00,411.50 382.00,331.00 497.00,333.00
+                      612.00,335.00 679.00,400.00 713.00,455.00
+                      M 407.50,288.00
+                    C 407.50,288.00 466.00,270.00 514.00,273.00
+                      562.00,276.00 608.00,291.00 625.00,300.00
+                      M 505.00,391.00
+                    C 505.00,391.00 577.00,391.00 627.00,441.00
+                      677.00,491.00 691.00,533.00 671.00,626.00
+                      M 493.00,566.00
+                    C 493.00,566.00 495.00,624.00 452.00,656.00
+                      409.00,688.00 351.00,677.00 351.00,677.00
+                      M 612.50,570.00
+                    C 612.50,570.00 615.50,586.50 611.50,607.00
+                      607.50,627.50 598.00,660.00 543.00,723.00" />
+          <filter id="glowfilter">
+            <feGaussianBlur stdDeviation="5" />
+          </filter>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid meet" id="fp-glow2">
+          <path id="path5" fill="none" stroke="white" stroke-width="20" stroke-linecap="round" d="M 432.00,404.00
+                 C 432.00,404.00 377.33,413.33 341.33,474.67
+                   305.33,536.00 302.67,602.00 350.67,618.67
+                   398.67,635.33 431.33,600.00 432.67,567.33
+                   434.00,534.67 459.33,504.00 498.00,507.33
+                   536.67,510.67 560.67,544.67 549.33,596.00
+                   538.00,647.33 525.33,664.67 508.00,683.33
+                   490.67,702.00 466.00,717.33 437.33,728.67" />
+          <filter id="glowfilter">
+            <feGaussianBlur stdDeviation="5" />
+          </filter>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid meet"
+          class="fingerprint" id="fp">
+          <path id="path5" fill="none" stroke="white" stroke-width="20" stroke-linecap="round" d="
+                      M 369.33,564.67
+                    C 369.33,564.67 372.00,514.00 424.00,472.67
+                      476.00,431.33 548.00,440.67 592.00,490.67
+                      M 313.00,411.00
+                    C 313.00,411.00 391.00,326.00 508.00,333.00
+                      625.00,340.00 673.00,402.00 712.00,453.00
+                      M 314.00,410.00
+                    C 314.00,410.00 405.00,314.00 534.00,335.00
+                      663.00,356.00 710.00,450.00 712.00,453.00
+                      M 315.00,411.50
+                    C 315.00,411.50 382.00,331.00 497.00,333.00
+                      612.00,335.00 679.00,400.00 713.00,455.00
+                      M 407.50,288.00
+                    C 407.50,288.00 466.00,270.00 514.00,273.00
+                      562.00,276.00 608.00,291.00 625.00,300.00
+                      M 505.00,391.00
+                    C 505.00,391.00 577.00,391.00 627.00,441.00
+                      677.00,491.00 691.00,533.00 671.00,626.00
+                      M 493.00,566.00
+                    C 493.00,566.00 495.00,624.00 452.00,656.00
+                      409.00,688.00 351.00,677.00 351.00,677.00
+                      M 612.50,570.00
+                    C 612.50,570.00 615.50,586.50 611.50,607.00
+                      607.50,627.50 598.00,660.00 543.00,723.00" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid meet" id="fp2">
+          <path id="path5" fill="none" stroke="white" stroke-width="20" stroke-linecap="round" d="M 432.00,404.00
+             C 432.00,404.00 377.33,413.33 341.33,474.67
+               305.33,536.00 302.67,602.00 350.67,618.67
+               398.67,635.33 431.33,600.00 432.67,567.33
+               434.00,534.67 459.33,504.00 498.00,507.33
+               536.67,510.67 560.67,544.67 549.33,596.00
+               538.00,647.33 525.33,664.67 508.00,683.33
+               490.67,702.00 466.00,717.33 437.33,728.67" />
+        </svg>
+  
+        <div id="rotate">
+          <div id="logo-backbone">
+  
+          </div>
+          <div id="logo-bases"></div>
+        </div>
+  
+  
+  
+  
+      </div>
+  
+  
+  
+      <h1 id="banner-heading">BINFSOC</h1>
+      <h3 id="banner-subheading">UNSW Bioinformatics Society</h3>
+  
+  
+  
+    </div>
+  
+    <div class="banner" id="banner-binfsoc">
+      <img src="/home/Homo-sapien-transparent.svg" alt="bg2" id="bg-logo">
+      <img src="/home/Phylogenetic-Tree-transparent.svg" alt="bg2Back" id="bg-logo-back">
+      <img src="/home/Cannis-transparent.svg" alt="bg2Mid" id="bg-logo-mid">
+  
+      <h1 id="mission-heading">Our Mission</h1>
+      
+      <h3 id="mission-statement1">At BINFSOC, our mission is to unite students from bioinformatics as well as computer
+        science, statistics, biology and chemistry disciplines, to create a network of future thinkers and innovators. </h3>
+      <h3 id="mission-statement2">We aim to equip students with fundamental skills they need to excel in industry, whilst
+        enriching the student life experience.</h3>
+      
+      <div id="action-items">
+        <ul>
+          <li>
+            <h2 onclick="navigate('/our-events/')">Our Events</h2>
+          </li>
+          <li>
+            <h2 onclick="navigate('/meet-the-team/')">Meet the Team</h2>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/unswbinfsoc/">
+              <i class="fab fa-facebook"></i>
             </a>
           </li>
         </ul>
+       
       </div>
-    </div>
-    
-  </div>
-  
-</nav>
-<script>
-  
-  
-  
-  var $body = document.body;
-  var $toggle = document.querySelector(".navbar-toggle");
-  var $navbar = document.querySelector("#huxblog_navbar");
-  var $collapse = document.querySelector(".navbar-collapse");
-
-  var __HuxNav__ = {
-    close: function () {
-      $navbar.className = " ";
       
-      setTimeout(function () {
-        
-        if ($navbar.className.indexOf("in") < 0) {
-          $collapse.style.height = "0px";
-        }
-      }, 400);
-    },
-    open: function () {
-      $collapse.style.height = "auto";
-      $navbar.className += " in";
-    },
-  };
-
   
-  $toggle.addEventListener("click", function (e) {
-    if ($navbar.className.indexOf("in") > 0) {
-      __HuxNav__.close();
-    } else {
-      __HuxNav__.open();
-    }
-  });
-
-  
-
-  document.addEventListener("click", function (e) {
-    if (e.target == $toggle) return;
-    if (e.target.className == "icon-bar") return;
-    __HuxNav__.close();
-  });
-</script>
-  
-<div class="search-page">
-  <div class="search-icon-close-container">
-    <span class="search-icon-close">
-      <i class="fa fa-chevron-down"></i>
-    </span>
-  </div>
-  <div class="search-main container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <form></form>
-        <input type="text" id="search-input" placeholder="$ grep...">
-        </form>
-        <div id="search-results" class="mini-post-list"></div>
-      </div>
     </div>
-  </div>
-</div>
-
+  
+    <div class="banner" id="banner-protein">
+      <video autoplay muted loop id="code-effect">
+        <source src="/home/codeEffect2.webm" type="video/webm">
+      </video>
+      <img src="/home/Protein.png" alt="img-protein" id="bg-protein">
+      <img src="/home/ProteinFlipped.png" alt="img-proteinReflection" id="bg-protein-flipped">
+      
+      <img src="/home/horizon.png" alt="img-proteinbg" id="bg-protein-horizon">
   
   
-
-
-
-<header class="intro-header" style="background-image: url('banner.jpg')">
-
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        
-        <div class="site-heading">
-        
-        
-        
-        <div class="logo">
-            <img src="logo.png" alt="BINFSOC">
+      <h3 id="protein-header1">If Biologists Push Carts</h3>
+      <h3 id="protein-header2">Bioinformaticians Invent Wheels</h3>
+      <h4 id="protein-link" class="glow">What is Bioinformatics?</h4>
+  
+  
+  
+  
+    </div>
+    <p id="debug"></p>
+  
+    <main id="main">
+      <img src="/home/white helix@4x.png" alt="Unswbinfsoc Logo" id="main-head">
+      <section>
+        <div class="card">
+          <div class="card-description">
+            
+  
+          <div class="card-image">
+  
+            
+          </div>
         </div>
-        
-          <h1>BINFSOC</h1>
+        <div class="card">
           
-          
-          
-          
-          <span class="subheading">UNSW Bioinformatics Society</span>
+         
         </div>
-      </div>
-    </div>
-  </div>
-</header>
-
-
+      </section>
+    </main>
   
-
-  
-
-  
-  
-  <div class="container">
-    <div class="row">
-      
-      
-      
-      <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12
-      col-xs-12 postlist-container">
-        
-
-
-   <div class="post-preview">
-  <a href="/binfsights/binfsights14/">
-      <h2 class="post-title">BINFSIGHTS 14</h2>
-      
-      <div class="post-content-preview">
-         BINFSights 14
-         
-      </div>
-  </a>
-  <p class="post-meta">
-      Posted by  Cameron McMenamie  on Mon, Mar 21, 2022
-  </p>
-</div>
-<hr>
-
-   <div class="post-preview">
-  <a href="/binfsights/binfsights13/">
-      <h2 class="post-title">BINFSIGHTS 13</h2>
-      
-      <div class="post-content-preview">
-         BINFSights 13
-         
-      </div>
-  </a>
-  <p class="post-meta">
-      Posted by  Cameron McMenamie  on Mon, Feb 28, 2022
-  </p>
-</div>
-<hr>
-
-   <div class="post-preview">
-  <a href="/binfsights/binfsights12/">
-      <h2 class="post-title">BINFSIGHTS 12</h2>
-      
-      <div class="post-content-preview">
-         BINFSights 12
-         
-      </div>
-  </a>
-  <p class="post-meta">
-      Posted by  Cameron McMenamie  on Mon, Oct 18, 2021
-  </p>
-</div>
-<hr>
-
-   <div class="post-preview">
-  <a href="/binfsights/binfsights11/">
-      <h2 class="post-title">BINFSIGHTS 11</h2>
-      
-      <div class="post-content-preview">
-         BINFSights 11
-         
-      </div>
-  </a>
-  <p class="post-meta">
-      Posted by  Cameron McMenamie  on Mon, Aug 2, 2021
-  </p>
-</div>
-<hr>
-
-   <div class="post-preview">
-  <a href="/binfsights/binfsights10/">
-      <h2 class="post-title">BINFSIGHTS 10</h2>
-      
-      <div class="post-content-preview">
-         BINFSights 10
-         
-      </div>
-  </a>
-  <p class="post-meta">
-      Posted by  Cameron McMenamie  on Mon, Jul 26, 2021
-  </p>
-</div>
-<hr>
-
-   <div class="post-preview">
-  <a href="/binfsights/binfsights9/">
-      <h2 class="post-title">BINFSIGHTS 9</h2>
-      
-      <div class="post-content-preview">
-         BINFSights 9
-         
-      </div>
-  </a>
-  <p class="post-meta">
-      Posted by  Cameron McMenamie  on Mon, Jul 12, 2021
-  </p>
-</div>
-<hr>
-
-   <div class="post-preview">
-  <a href="/binfsights/binfsights8/">
-      <h2 class="post-title">BINFSIGHTS 8</h2>
-      
-      <div class="post-content-preview">
-         BINFSights 8
-         
-      </div>
-  </a>
-  <p class="post-meta">
-      Posted by  Cameron McMenamie  on Mon, Jul 5, 2021
-  </p>
-</div>
-<hr>
-
-   <div class="post-preview">
-  <a href="/binfsights/binfsights7/">
-      <h2 class="post-title">BINFSIGHTS 7</h2>
-      
-      <div class="post-content-preview">
-         BINFSights 7
-         
-      </div>
-  </a>
-  <p class="post-meta">
-      Posted by  Cameron McMenamie  on Mon, Jun 21, 2021
-  </p>
-</div>
-<hr>
-
-   <div class="post-preview">
-  <a href="/binfsights/binfsights6/">
-      <h2 class="post-title">BINFSIGHTS 6</h2>
-      
-      <div class="post-content-preview">
-         BINFSights 6
-         
-      </div>
-  </a>
-  <p class="post-meta">
-      Posted by  Cameron McMenamie  on Mon, Jun 7, 2021
-  </p>
-</div>
-<hr>
-
-   <div class="post-preview">
-  <a href="/binfsights/binfsights5/">
-      <h2 class="post-title">BINFSIGHTS 5</h2>
-      
-      <div class="post-content-preview">
-         BINFSights 5
-         
-      </div>
-  </a>
-  <p class="post-meta">
-      Posted by  Cameron McMenamie  on Mon, Apr 19, 2021
-  </p>
-</div>
-<hr>
-
-
-
-<ul class="pager">
-  
-  
-  <li class="next">
-      <a href="/page/2/">Older Posts &rarr;</a>
-  </li>
-  
-</ul>
-
-
-      </div>
-      
-      <div class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-12
-      col-xs-12 sidebar-container">
-
-        
-        <section>
-  
-  
-  <h5>FEATURED TAGS</h5>
-  <div class="tags">
-    
-    <a href="/tags/binfsights/">binfsights</a>
-    
-  </div>
-</section>
-        
-        
-        
-
-      </div>
-      
-
-    </div>
+    <script src="/js/home.js"></script>
   </div>
 
-  
 
-  
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        
-        
-
-
-<ul class="list-inline text-center">
-
-  
-  
-  
-  
-  
-  <li>
-    <a target="_blank" href="https://www.facebook.com/unswbinfsoc">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-      </span>
-    </a>
-  </li>
-  
-  
-  <li>
-    <a target="_blank" href="https://github.com/binfsoc">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-      </span>
-    </a>
-  </li>
-  
-  
-  <li>
-    <a target="_blank" href="https://www.linkedin.com/in/company/unsw-bioinformatics-society">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-      </span>
-    </a>
-  </li>
-  
-</ul>
-        <p class="copyright text-muted">
-          Copyright &copy; BINFSOC 2022
-          <br>
-          Powered by <a href="https://gohugo.io">Hugo</a>
-        </p>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<script src="/js/jquery.min.js"></script>
-<script src="/js/bootstrap.min.js" crossorigin="anonymous"></script>
-
-
-
-<script src="/js/hux-blog.min.6436294d8572a421d31642d249910e90a99a4c763ccc93d2702846084e55450a.js"></script>
-
-
-<script src="/js/simple-jekyll-search.min.js"></script>
-
-
-<script src="/js/search.min.3b7db2b3df33fe1a11e849a920b73bf33f2bda851375e9c72b69cac985999032.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="/zoomjs/zoom.min.js"></script>
 </body>
-
-</html>
