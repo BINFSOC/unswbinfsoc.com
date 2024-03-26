@@ -5,6 +5,7 @@
     <link>/sponsors/</link>
     <description>Recent content in Our Sponsors on BINFSOC</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/sponsors/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="/sponsors/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
