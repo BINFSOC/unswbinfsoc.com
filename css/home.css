@@ -20,6 +20,7 @@ body{
     position:relative;
     height:100%;
     overflow-x:hidden;
+    /* overflow-y:hidden; */
     scrollbar-width:none;
     -ms-overflow-style:none;
 
@@ -93,7 +94,7 @@ p{
 
 
 
-main{
+main {
     visibility:hidden;
     top:130vh;
     width:100vw;
@@ -101,7 +102,7 @@ main{
     display:flex;
     flex-direction: column;
     align-items: center;
-    background-color: black;
+    background-color: white;
     margin:auto;
     transition:.4s;
     -webkit-mask-image: linear-gradient(to top,black 99%,rgba(0,0,0,0.8) 100%);
