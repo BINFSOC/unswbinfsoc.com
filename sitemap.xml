@@ -83,5 +83,7 @@
     <loc>/team/</loc>
   </url><url>
     <loc>/sponsors/</loc>
+  </url><url>
+    <loc>/tags/team/</loc>
   </url>
 </urlset>

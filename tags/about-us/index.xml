@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About-Us on BINFSOC</title>
+    <link>//localhost:1313/tags/about-us/</link>
+    <description>Recent content in About-Us on BINFSOC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="//localhost:1313/tags/about-us/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Meet the Team</title>
+      <link>//localhost:1313/team/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/team/</guid>
+      <description>&#xD;BINFSOC is run by a small team of individuals passionate about bioinformatics. If you see us around at events or on campus, don’t hesitate to say hi!&#xA;Donren President&#xD;Anish&#xD;Vice President&#xD;Simon&#xD;Treasurer and Marketing&#xD;Alex&#xD;HR&#xD;Sarina&#xD;Events&#xD;Nadil&#xD;Education&#xD;Yvonne&#xD;IT/Publications&#xD;Albert&#xD;General Secretary&#xD;</description>
+    </item>
+  </channel>
+</rss>
