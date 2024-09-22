@@ -869,6 +869,7 @@ section {
     border-bottom: 2px solid #2f3f4c;;
     transition: .4s;
     display: inline-block;
+    transition: color 0.4s, padding 0.4s, border-color 0.4s;
     /* font-weight: bold; */
     color: #646464;
     cursor: pointer;

@@ -1,7 +1,7 @@
 #binfsights-bar{
     width:100%;
     height:auto;
-    border: 8px solid;
+    /* border: 8px solid; */
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
