@@ -1,18 +1,58 @@
-#binfsights-bar{
-    width:100%;
-    height:auto;
-    /* border: 8px solid; */
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    box-sizing:border-box;
+
+.bookshelf-bar {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
+
+
+.bookshelf-bar a {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  padding: 8px;
+  transition: transform 0.3s ease-in-out !important;
+}
+
+.bookshelf-bar a:hover {
+  transform: scale(1.05);
+}
+
+
+#binfsights-bar {
+  width: 150%;
+  min-height: 100px;
+  max-height: 100%;
+  /* border: 8px solid; */
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
 #binfsights-bar a {
-    display: inline-block;
-    vertical-align: middle;
-    height: auto;
-    width: 30%;
+  width: 40%;
 }
+
+#events-bar{
+  width:130%;
+  height:auto;
+  overflow-x: scroll;
+  overflow-y: auto;
+  white-space: nowrap;
+  box-sizing:border-box;
+  padding: 8px;
+}
+
+#events-bar a {
+  width: 50%;
+}
+
+
+
 
 .navbar-logo { 
     width: 100%; 
