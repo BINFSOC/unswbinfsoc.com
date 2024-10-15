@@ -55,12 +55,21 @@
 
 
 .navbar-logo { 
-    width: 100%; 
-    max-width: 150px; 
-    height: auto; 
-  }
+  width: 100%; 
+  max-width: 150px; 
+  height: auto; 
+}
 
-.logo img {
-    width: 250px;
-    height: auto;
-  }
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* .logo img {
+
+    display: flex;
+    margin: 20px;
+  } */
