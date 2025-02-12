@@ -37,7 +37,7 @@
 }
 
 #events-bar{
-  width:130%;
+  width:140%;
   height:auto;
   overflow-x: scroll;
   overflow-y: auto;
@@ -47,7 +47,7 @@
 }
 
 #events-bar a {
-  width: 50%;
+  width: 40%;
 }
 
 
