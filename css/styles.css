@@ -7,7 +7,6 @@
   -ms-overflow-style: none;
 }
 
-
 .bookshelf-bar a {
   display: inline-block;
   vertical-align: middle;
@@ -36,13 +35,13 @@
   width: 40%;
 }
 
-#events-bar{
-  width:140%;
-  height:auto;
+#events-bar {
+  width: 140%;
+  height: auto;
   overflow-x: scroll;
   overflow-y: auto;
   white-space: nowrap;
-  box-sizing:border-box;
+  box-sizing: border-box;
   padding: 8px;
 }
 
@@ -50,6 +49,12 @@
   width: 40%;
 }
 
+#events-bar img {
+  height: 200px;
+  width: 360px;
+  object-fit: cover;
+  display: block;
+}
 
 
 
@@ -67,8 +72,8 @@
   gap: 20px;
 }
 
-/* .logo img {
-
-    display: flex;
-    margin: 20px;
-  } */
+@media(max-width: 900px) {
+  #events-bar {
+    width: 100%;
+  }
+}
