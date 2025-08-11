@@ -6,8 +6,15 @@
     <description>Recent content in BINFsights on BINFSOC</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="/binfsights/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BINFSIGHTS 28</title>
+      <link>/binfsights/binfsights28/</link>
+      <pubDate>Mon, 11 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>/binfsights/binfsights28/</guid>
+      <description>&lt;div id=&#34;adobe-dc-view&#34; style=&#34;height: 950px; width: 100%;&#34;&gt;&lt;/div&gt;&#xD;&#xA;&lt;script src=&#34;https://acrobatservices.adobe.com/view-sdk/viewer.js&#34;&gt;&lt;/script&gt;&#xD;&#xA;&lt;script type=&#34;text/javascript&#34;&gt;&#xD;&#xA;&#x9;document.addEventListener(&#34;adobe_dc_view_sdk.ready&#34;, function(){&#xD;&#xA;&#x9;&#x9;var adobeDCView = new AdobeDC.View({clientId: &#34;4988fe9639fd402981d3f47c0e893b15&#34;, divId: &#34;adobe-dc-view&#34;});&#xD;&#xA;&#x9;&#x9;adobeDCView.previewFile({&#xD;&#xA;&#x9;&#x9;&#x9;content:{location: {url: &#34;\/pdfs\/BINFSIGHTS28.pdf&#34;}},&#xD;&#xA;            metaData:{fileName: &#34;BINFsights 28&#34;}&#xD;&#xA;&#x9;&#x9;}, {embedMode: &#34;SIZED_CONTAINER&#34;, showDownloadPDF: false, showPrintPDF: false});&#xD;&#xA;&#x9;});&#xD;&#xA;&lt;/script&gt;</description>
+    </item>
     <item>
       <title>BINFSIGHTS 27</title>
       <link>/binfsights/binfsights27/</link>
