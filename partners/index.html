@@ -24,18 +24,19 @@
     
 
   
-Contact UsIf you would like to become a sponsor or partner of BINFSOC, please reach out to sponsorships@unswbinfsoc.com">
+Contact Us
+If you would like to become a sponsor or partner of BINFSOC, please reach out to sponsorships@unswbinfsoc.com">
   <meta name="keywords" content="unsw, bioinformatics, society, binfsoc, binfsights">
 
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Our Partners">
-  <meta name="twitter:description" content="Contact UsIf you would like to become a sponsor or partner of BINFSOC, please reach out to sponsorships@unswbinfsoc.com">
+  <meta name="twitter:description" content="Contact Us If you would like to become a sponsor or partner of BINFSOC, please reach out to sponsorships@unswbinfsoc.com">
 
   <meta property="og:url" content="/partners/">
   <meta property="og:site_name" content="BINFSOC">
   <meta property="og:title" content="Our Partners">
-  <meta property="og:description" content="Contact UsIf you would like to become a sponsor or partner of BINFSOC, please reach out to sponsorships@unswbinfsoc.com">
+  <meta property="og:description" content="Contact Us If you would like to become a sponsor or partner of BINFSOC, please reach out to sponsorships@unswbinfsoc.com">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="website">
 
@@ -45,16 +46,11 @@ Contact UsIf you would like to become a sponsor or partner of BINFSOC, please re
   <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
     type="text/css">
 
-  
-  
   <link rel="stylesheet" href="/sass/main.css">
 
-  
-  <link rel="stylesheet" href="/zoomjs/zoom.min.css">
+  <link rel="stylesheet" href="/zoomjs/zoom.css">
 
-  
-  
-  
+  <link rel="stylesheet" href="/css/styles.css">
 
   <script src="/js/lazysizes.min.js"></script>
 
@@ -163,6 +159,23 @@ Contact UsIf you would like to become a sponsor or partner of BINFSOC, please re
   });
 </script>
   
+<div class="search-page">
+  <div class="search-icon-close-container">
+    <span class="search-icon-close">
+      <i class="fa fa-chevron-down"></i>
+    </span>
+  </div>
+  <div class="search-main container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <form></form>
+        <input type="text" id="search-input" placeholder="$ grep...">
+        </form>
+        <div id="search-results" class="mini-post-list"></div>
+      </div>
+    </div>
+  </div>
+</div>
 
   
   
@@ -210,7 +223,8 @@ Contact UsIf you would like to become a sponsor or partner of BINFSOC, please re
     <img src="/images/redbull-logo.webp" alt="cci" width="250px" >
 </div>
   
-<h1 id="contact-us">Contact Us<a class="anchorjs-link" href="#contact-us"></a></h1><p>If you would like to become a sponsor or partner of BINFSOC, please reach out to <a href="mailto:sponsorships@unswbinfsoc.com">sponsorships@unswbinfsoc.com</a></p>
+<h1 id="contact-us">Contact Us</h1>
+<p>If you would like to become a sponsor or partner of BINFSOC, please reach out to <a href="mailto:sponsorships@unswbinfsoc.com">sponsorships@unswbinfsoc.com</a></p>
 
 
         <hr style="visibility: hidden;" />
@@ -220,8 +234,6 @@ Contact UsIf you would like to become a sponsor or partner of BINFSOC, please re
         </ul>
         <hr style="visibility: hidden;" />
 
-        
-        
 
       </div>
 
@@ -250,9 +262,6 @@ Contact UsIf you would like to become a sponsor or partner of BINFSOC, please re
     
   </div>
 </section>
-
-        
-        
 
       </div>
     </div>
@@ -321,15 +330,12 @@ Contact UsIf you would like to become a sponsor or partner of BINFSOC, please re
 <script src=/js/bootstrap.min.js crossorigin="anonymous"></script>
 
 
-
-<script src="/js/hux-blog.min.73a6a8d8df45293e042d15867416f603045bbeb98406731e5022d6c60388cd9d.js"></script>
+<script src="/js/hux-blog.js"></script>
 
 
 <script src=/js/simple-jekyll-search.min.js></script>
 
-
-<script src="/js/search.min.53bce5da475b4d362500e5ce5dddfa22e20e1b9018777411d2020b4b839c9310.js"></script>
-
+<script src="/js/search.js"></script>
 
 
 
@@ -338,10 +344,25 @@ Contact UsIf you would like to become a sponsor or partner of BINFSOC, please re
 
 
 
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-1TWJRRTG4B"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-1TWJRRTG4B');
+        }
+      </script>
 
 
 <script src="/zoomjs/zoom.min.js"></script>
-
 </body>
 
 </html>

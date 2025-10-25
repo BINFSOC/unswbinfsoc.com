@@ -37,16 +37,11 @@
   <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
     type="text/css">
 
-  
-  
   <link rel="stylesheet" href="/sass/main.css">
 
-  
-  <link rel="stylesheet" href="/zoomjs/zoom.min.css">
+  <link rel="stylesheet" href="/zoomjs/zoom.css">
 
-  
-  
-  
+  <link rel="stylesheet" href="/css/styles.css">
 
   <script src="/js/lazysizes.min.js"></script>
 
@@ -155,6 +150,23 @@
   });
 </script>
   
+<div class="search-page">
+  <div class="search-icon-close-container">
+    <span class="search-icon-close">
+      <i class="fa fa-chevron-down"></i>
+    </span>
+  </div>
+  <div class="search-main container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <form></form>
+        <input type="text" id="search-input" placeholder="$ grep...">
+        </form>
+        <div id="search-results" class="mini-post-list"></div>
+      </div>
+    </div>
+  </div>
+</div>
 
   
   
@@ -196,7 +208,8 @@
 
 <div class="post-container">
  
-  <h4 id="what-is-bioinformatics">What is bioinformatics?<a class="anchorjs-link" href="#what-is-bioinformatics"></a></h4><p>Bioinformatics is an interdisciplinary field that develops methods and software tools for understanding biological data. It is a combination of computer science, biology, chemistry, and statistics where computers facilitate the application of information technology to the storage, management, and analysis of biological information. It has been applied to medical, evolutionary and conservation research.</p>
+  <h4 id="what-is-bioinformatics">What is bioinformatics?</h4>
+<p>Bioinformatics is an interdisciplinary field that develops methods and software tools for understanding biological data. It is a combination of computer science, biology, chemistry, and statistics where computers facilitate the application of information technology to the storage, management, and analysis of biological information. It has been applied to medical, evolutionary and conservation research.</p>
 <p><strong>Areas of bioinformatics include:</strong></p>
 <ul>
 <li>Sequences - DNA, RNA, protein sequence analysis, genome sequences</li>
@@ -209,10 +222,14 @@
 <li>Drug discovery</li>
 <li>Wildlife tracking and biodiversity monitoring</li>
 </ul>
-<h2 id=""><a class="anchorjs-link" href="#"></a></h2><h4 id="binfsoc">BINFSOC<a class="anchorjs-link" href="#binfsoc"></a></h4><p>UNSW Bioinformatics Society is a student-run society for those interested in computer science, biology, or a combination of the two. </p>
+<h2></h2>
+<h4 id="binfsoc">BINFSOC</h4>
+<p>UNSW Bioinformatics Society is a student-run society for those interested in computer science, biology, or a combination of the two. </p>
 <p>Founded in 2020, we have quickly grown a large network of interested students and experienced academics in the bioinformatics and broader biotech world, and we are keeping busy this 2022 to continue expanding our community. </p>
 <p>We host social and professional events, peer mentoring programs, and publish articles on emerging bioinformatics topics.  </p>
-<h2 id=""><a class="anchorjs-link" href="#"></a></h2><h4 id="our-logo">OUR LOGO<a class="anchorjs-link" href="#our-logo"></a></h4>
+<h2></h2>
+<h4 id="our-logo">OUR LOGO</h4>
+
 <img src="/logo.png" alt="BINFSOC logo" style="width: 200px; float: left">
 
 
@@ -230,15 +247,11 @@
 </div>
 
 
-
-
       </div>
       
       <div class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-12
       col-xs-12 sidebar-container">
 
-        
-        
         
         
         
@@ -311,15 +324,12 @@
 <script src=/js/bootstrap.min.js crossorigin="anonymous"></script>
 
 
-
-<script src="/js/hux-blog.min.73a6a8d8df45293e042d15867416f603045bbeb98406731e5022d6c60388cd9d.js"></script>
+<script src="/js/hux-blog.js"></script>
 
 
 <script src=/js/simple-jekyll-search.min.js></script>
 
-
-<script src="/js/search.min.53bce5da475b4d362500e5ce5dddfa22e20e1b9018777411d2020b4b839c9310.js"></script>
-
+<script src="/js/search.js"></script>
 
 
 
@@ -328,10 +338,25 @@
 
 
 
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-1TWJRRTG4B"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-1TWJRRTG4B');
+        }
+      </script>
 
 
 <script src="/zoomjs/zoom.min.js"></script>
-
 </body>
 
 </html>

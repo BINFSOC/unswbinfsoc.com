@@ -16,7 +16,8 @@
   <title>Contact Us | BINFSOC</title>
 
   
-  <meta name="description" content="We’d love to hear from youSend an email or contact us via social media!
+  <meta name="description" content="We’d love to hear from you
+Send an email or contact us via social media!
 Email: exec@unswbinfsoc.com
 Discord: BINFSOC Server
 Facebook: UNSW Bioinformatics Society
@@ -28,7 +29,7 @@ TikTok: @unswbinfsoc">
   
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Contact Us">
-  <meta name="twitter:description" content="We’d love to hear from youSend an email or contact us via social media!
+  <meta name="twitter:description" content="We’d love to hear from you Send an email or contact us via social media!
 Email: exec@unswbinfsoc.com
 Discord: BINFSOC Server
 Facebook: UNSW Bioinformatics Society
@@ -39,7 +40,7 @@ TikTok: @unswbinfsoc">
   <meta property="og:url" content="/contact/">
   <meta property="og:site_name" content="BINFSOC">
   <meta property="og:title" content="Contact Us">
-  <meta property="og:description" content="We’d love to hear from youSend an email or contact us via social media!
+  <meta property="og:description" content="We’d love to hear from you Send an email or contact us via social media!
 Email: exec@unswbinfsoc.com
 Discord: BINFSOC Server
 Facebook: UNSW Bioinformatics Society
@@ -55,16 +56,11 @@ TikTok: @unswbinfsoc">
   <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
     type="text/css">
 
-  
-  
   <link rel="stylesheet" href="/sass/main.css">
 
-  
-  <link rel="stylesheet" href="/zoomjs/zoom.min.css">
+  <link rel="stylesheet" href="/zoomjs/zoom.css">
 
-  
-  
-  
+  <link rel="stylesheet" href="/css/styles.css">
 
   <script src="/js/lazysizes.min.js"></script>
 
@@ -173,6 +169,23 @@ TikTok: @unswbinfsoc">
   });
 </script>
   
+<div class="search-page">
+  <div class="search-icon-close-container">
+    <span class="search-icon-close">
+      <i class="fa fa-chevron-down"></i>
+    </span>
+  </div>
+  <div class="search-main container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <form></form>
+        <input type="text" id="search-input" placeholder="$ grep...">
+        </form>
+        <div id="search-results" class="mini-post-list"></div>
+      </div>
+    </div>
+  </div>
+</div>
 
   
   
@@ -212,11 +225,12 @@ TikTok: @unswbinfsoc">
               col-lg-8 col-lg-offset-2
               col-md-10 col-md-offset-1
               post-container">
-        <h1 id="wed-love-to-hear-from-you">We’d love to hear from you<a class="anchorjs-link" href="#wed-love-to-hear-from-you"></a></h1><p>Send an email or contact us via social media!</p>
+        <h1 id="wed-love-to-hear-from-you">We’d love to hear from you</h1>
+<p>Send an email or contact us via social media!</p>
 <p><strong>Email:</strong> <a href="mailto:exec@unswbinfsoc.com">exec@unswbinfsoc.com</a></p>
-<p><strong>Discord:</strong> <a href="/discord.com/invite/Dageu2BzvM">BINFSOC Server</a></p>
-<p><strong>Facebook:</strong> <a href="https://www.facebook.com/unswbinfsoc/" target="_blank">UNSW Bioinformatics Society</a></p>
-<p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/unsw-bioinformatics-society/?originalSubdomain=au" target="_blank">UNSW Bioinformatics Society</a></p>
+<p><strong>Discord:</strong> <a href="discord.com/invite/Dageu2BzvM">BINFSOC Server</a></p>
+<p><strong>Facebook:</strong> <a href="https://www.facebook.com/unswbinfsoc/">UNSW Bioinformatics Society</a></p>
+<p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/unsw-bioinformatics-society/?originalSubdomain=au">UNSW Bioinformatics Society</a></p>
 <p><strong>Instagram:</strong> @unswbinfsoc</p>
 <p><strong>TikTok:</strong> @unswbinfsoc</p>
 
@@ -228,8 +242,6 @@ TikTok: @unswbinfsoc">
         </ul>
         <hr style="visibility: hidden;" />
 
-        
-        
 
       </div>
 
@@ -258,9 +270,6 @@ TikTok: @unswbinfsoc">
     
   </div>
 </section>
-
-        
-        
 
       </div>
     </div>
@@ -329,15 +338,12 @@ TikTok: @unswbinfsoc">
 <script src=/js/bootstrap.min.js crossorigin="anonymous"></script>
 
 
-
-<script src="/js/hux-blog.min.73a6a8d8df45293e042d15867416f603045bbeb98406731e5022d6c60388cd9d.js"></script>
+<script src="/js/hux-blog.js"></script>
 
 
 <script src=/js/simple-jekyll-search.min.js></script>
 
-
-<script src="/js/search.min.53bce5da475b4d362500e5ce5dddfa22e20e1b9018777411d2020b4b839c9310.js"></script>
-
+<script src="/js/search.js"></script>
 
 
 
@@ -346,10 +352,25 @@ TikTok: @unswbinfsoc">
 
 
 
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-1TWJRRTG4B"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-1TWJRRTG4B');
+        }
+      </script>
 
 
 <script src="/zoomjs/zoom.min.js"></script>
-
 </body>
 
 </html>
