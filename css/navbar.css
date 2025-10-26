@@ -70,33 +70,38 @@ nav ul {
     cursor: pointer;
 }
 
-/*searchbox*/
-
-#search-icon {
-    color: white;
-    padding: 0 32px;
-    cursor: pointer;
-    transition: .4s;
-
-}
-
-#search-icon:hover {
-    color: rgba(181, 211, 52, 1);
-}
-
-#search-box {
+/*Slideout Menu*/
+#slideout-menu {
+    visibility: hidden;
+    background: #414042;
+    z-index: 100;
     position: fixed;
-    right: 0;
-    top: 24px;
-    width: 500px;
-    pointer-events: none;
-    z-index: 50;
-    transition: .4s;
+    margin-top: 72px;
+    width: 100%;
+    text-align: center;
 
 }
 
-#search-box input {
-    height: 44px;
-    width: 100%;
+#slideout-menu ul {
+    list-style: none;
+    padding: 0 32px;
+
+}
+
+#slideout-menu ul li {
+    padding: 8px;
+
+}
+
+#slideout-menu a {
+    font-size: 20px;
+    color: white;
+}
+
+#slideout-menu input {
+    width: 85%;
+    padding: 8px;
+    font-size: 20px;
+    text-align: center;
 
 }
