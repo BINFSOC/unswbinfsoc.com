@@ -26,9 +26,10 @@
   max-height: 100%;
   /* border: 8px solid; */
   overflow-x: scroll;
-  overflow-y: hidden;
+  overflow-y: auto;
   white-space: nowrap;
   box-sizing: border-box;
+  padding: 8px;
 }
 
 #binfsights-bar a {
@@ -72,8 +73,11 @@
   gap: 20px;
 }
 
-@media(max-width: 900px) {
+@media(max-width: 1000px) {
   #events-bar {
+    width: 100%;
+  }
+  #binfsights-bar {
     width: 100%;
   }
 }
