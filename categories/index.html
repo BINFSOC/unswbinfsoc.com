@@ -32,21 +32,17 @@
   <meta property="og:type" content="website">
 
 
-  <link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/bootstrap.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/navbar.css">
   
   <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
     type="text/css">
 
-  
-  
   <link rel="stylesheet" href="/sass/main.css">
 
-  
-  <link rel="stylesheet" href="/zoomjs/zoom.min.css">
+  <link rel="stylesheet" href="/zoomjs/zoom.css">
 
-  
-  
-  
+  <link rel="stylesheet" href="/css/styles.css">
 
   <script src="/js/lazysizes.min.js"></script>
 
@@ -68,93 +64,61 @@
   
 
   
+  <nav id="navigation">
+      <div id="logo-img">
+        <a href="/">
   
+          <img src="/home/white helix@4x.png" alt="Unswbinfsoc Logo">
+        </a>
+      </div>
+      <div id="menu-icon" onclick="slideoutMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul>
+        <li>
+          <a href="/binfsights/">BINFSIGHTS</a>
+        </li>
+        <li>
+          <a href="/events/">OUR EVENTS</a>
+        </li>
+        <li>
+          <a href="/acgt/">CAREERS GUIDE</a>
+        </li>
+        <li>
+          <a href="/team/">MEET THE TEAM</a>
+        </li>
+        <li>
+          <a href="/about/">ABOUT US</a>
+        </li>
+        <li>
+          <a href="/partners/">OUR PARTNERS</a>
+        </li>
+        <li>
+          <a href="/contact/">CONTACT US</a>
+        </li>
+        
+      </ul>
+  
+    </nav>
 
-
-
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top invert">
-  <div class="container-fluid">
-    
-    <div class="navbar-header page-scroll">
-      <button type="button" class="navbar-toggle">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/">BINFSOC</a>
-    </div>
-    
-    <div id="huxblog_navbar">
-      <div class="navbar-collapse">
-        <ul class="nav navbar-nav navbar-right">
-          
-          <li><a href="/binfsights/" title="BINFSIGHTS">BINFSIGHTS</a></li>
-          
-          <li><a href="/events/" title="Our Events">Our Events</a></li>
-          
-          <li><a href="/acgt/" title="Careers Guide">Careers Guide</a></li>
-          
-          <li><a href="/team/" title="Meet The Team">Meet The Team</a></li>
-          
-          <li><a href="/about/" title="About Us">About Us</a></li>
-          
-          <li><a href="/partners/" title="Our Partners">Our Partners</a></li>
-          
-          <li><a href="/contact/" title="Contact Us">Contact Us</a></li>
-          
-
-        </ul>
+  
+<div class="search-page">
+  <div class="search-icon-close-container">
+    <span class="search-icon-close">
+      <i class="fa fa-chevron-down"></i>
+    </span>
+  </div>
+  <div class="search-main container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <form></form>
+        <input type="text" id="search-input" placeholder="$ grep...">
+        </form>
+        <div id="search-results" class="mini-post-list"></div>
       </div>
     </div>
-    
   </div>
-  
-</nav>
-<script>
-  
-  
-  
-  var $body = document.body;
-  var $toggle = document.querySelector(".navbar-toggle");
-  var $navbar = document.querySelector("#huxblog_navbar");
-  var $collapse = document.querySelector(".navbar-collapse");
-
-  var __HuxNav__ = {
-    close: function () {
-      $navbar.className = " ";
-      
-      setTimeout(function () {
-        
-        if ($navbar.className.indexOf("in") < 0) {
-          $collapse.style.height = "0px";
-        }
-      }, 400);
-    },
-    open: function () {
-      $collapse.style.height = "auto";
-      $navbar.className += " in";
-    },
-  };
-
-  
-  $toggle.addEventListener("click", function (e) {
-    if ($navbar.className.indexOf("in") > 0) {
-      __HuxNav__.close();
-    } else {
-      __HuxNav__.open();
-    }
-  });
-
-  
-
-  document.addEventListener("click", function (e) {
-    if (e.target == $toggle) return;
-    if (e.target.className == "icon-bar") return;
-    __HuxNav__.close();
-  });
-</script>
-  
+</div>
 
   
   
@@ -184,21 +148,39 @@
 
   
 
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      
-      <div class="mini-post-list">
 
-        <section class="">
-          <span class="fa listing-seperator"></span>
+<article>
+  <div class="container">
+    <div class="row">
+
+      
+      <div class="
+              col-lg-8 col-lg-offset-2
+              col-md-10 col-md-offset-1
+              post-container">
+        
+
+        <hr style="visibility: hidden;" />
+        <ul class="pager">
           
-        </section>
+          
+        </ul>
+        <hr style="visibility: hidden;" />
       </div>
 
+      
+      
+      
+      
+      <div class="
+              col-lg-8 col-lg-offset-2
+              col-md-10 col-md-offset-1
+              sidebar-container">
+      </div>
     </div>
   </div>
-</div>
+</article>
+
 
 
   
@@ -261,15 +243,12 @@
 <script src=/js/bootstrap.min.js crossorigin="anonymous"></script>
 
 
-
-<script src="/js/hux-blog.min.73a6a8d8df45293e042d15867416f603045bbeb98406731e5022d6c60388cd9d.js"></script>
+<script src="/js/hux-blog.js"></script>
 
 
 <script src=/js/simple-jekyll-search.min.js></script>
 
-
-<script src="/js/search.min.53bce5da475b4d362500e5ce5dddfa22e20e1b9018777411d2020b4b839c9310.js"></script>
-
+<script src="/js/search.js"></script>
 
 
 
@@ -278,10 +257,25 @@
 
 
 
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-1TWJRRTG4B"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-1TWJRRTG4B');
+        }
+      </script>
 
 
 <script src="/zoomjs/zoom.min.js"></script>
-
 </body>
 
 </html>
