@@ -10,9 +10,16 @@
 		
 		
 		
-			<lastBuildDate>Thu, 23 Apr 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Fri, 07 Aug 2026 00:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="/tags/binfsights/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>BINFSIGHTS Term 2 2026</title>
+				<link>/binfsights/binfsights-26t2/</link>
+				<pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
+				<guid>/binfsights/binfsights-26t2/</guid>
+				<description>&lt;div id=&#34;adobe-dc-view&#34; style=&#34;height: 950px; width: 100%;&#34;&gt;&lt;/div&gt;&#xA;&lt;script src=&#34;https://acrobatservices.adobe.com/view-sdk/viewer.js&#34;&gt;&lt;/script&gt;&#xA;&lt;script type=&#34;text/javascript&#34;&gt;&#xA;&#x9;document.addEventListener(&#34;adobe_dc_view_sdk.ready&#34;, function(){&#xA;&#x9;&#x9;var adobeDCView = new AdobeDC.View({clientId: &#34;4988fe9639fd402981d3f47c0e893b15&#34;, divId: &#34;adobe-dc-view&#34;});&#xA;&#x9;&#x9;adobeDCView.previewFile({&#xA;&#x9;&#x9;&#x9;content:{location: {url: &#34;\/pdfs\/BINFSIGHTS_26T2.pdf&#34;}},&#xA;            metaData:{fileName: &#34;BINFsights Term 2 2026&#34;}&#xA;&#x9;&#x9;}, {embedMode: &#34;SIZED_CONTAINER&#34;, showDownloadPDF: false, showPrintPDF: false});&#xA;&#x9;});&#xA;&lt;/script&gt;</description>
+			</item>
 			<item>
 				<title>BINFSIGHTS Term 1 2026</title>
 				<link>/binfsights/binfsights-26t1/</link>
